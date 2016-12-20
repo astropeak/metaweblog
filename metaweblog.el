@@ -92,27 +92,27 @@ title of the post, post contents, list of categories, and date respectively."
 				 (member nil
 					 (name nil "description")
 					 (value nil ,post-description))
-				 (member nil
-					 (name nil "mt_excerpt")
-					 (value nil ,post-excerpt))
-                                 (member nil
-					 (name nil "wp_slug")
-					 (value nil ,post-permalink))
-				 (member nil
-					 (name nil "dateCreated")
-					 (dateTime.iso8601 nil ,post-date))
-				 ,(when post-tags
-				    `(member nil
-					     (name nil "mt_keywords")
-					     (value nil
-						    (array
-						     nil
-						     ,(append
-						       '(data nil)
-						       (mapcar
-							(lambda(f)
-							  `(value nil (string nil ,f)))
-							post-tags))))))
+				 ;; (member nil
+				 ;;     (name nil "mt_excerpt")
+				 ;;     (value nil ,post-excerpt))
+                 ;;                 (member nil
+				 ;;     (name nil "wp_slug")
+				 ;;     (value nil ,post-permalink))
+				 ;; (member nil
+				 ;;     (name nil "dateCreated")
+				 ;;     (dateTime.iso8601 nil ,post-date))
+				 ;; ,(when post-tags
+				 ;;    `(member nil
+				 ;;         (name nil "mt_keywords")
+				 ;;         (value nil
+				 ;;    	    (array
+				 ;;    	     nil
+				 ;;    	     ,(append
+				 ;;    	       '(data nil)
+				 ;;    	       (mapcar
+				 ;;    		(lambda(f)
+				 ;;    		  `(value nil (string nil ,f)))
+				 ;;    		post-tags))))))
 				 ,(when post-categories
 				    `(member nil
 					     (name nil "categories")
@@ -161,30 +161,30 @@ title of the post, post contents, list of categories, and date respectively."
 				 (member nil
 					 (name nil "description")
 					 (value nil ,post-description))
-				 (member nil
-					 (name nil "mt_excerpt")
-					 (value nil ,post-excerpt))
-                                 (member nil
-					 (name nil "wp_slug")
-					 (value nil ,post-permalink))
-                                 (member nil
-					 (name nil "wp_page_parent_id")
-					 (value nil ,post-parent))
-				 (member nil
-					 (name nil "dateCreated")
-					 (dateTime.iso8601 nil ,post-date))
-				 ,(when post-tags
-				    `(member nil
-					     (name nil "mt_keywords")
-					     (value nil
-						    (array
-						     nil
-						     ,(append
-						       '(data nil)
-						       (mapcar
-							(lambda(f)
-							  `(value nil (string nil ,f)))
-							post-tags))))))
+				 ;; (member nil
+				 ;;     (name nil "mt_excerpt")
+				 ;;     (value nil ,post-excerpt))
+                 ;;                 (member nil
+				 ;;     (name nil "wp_slug")
+				 ;;     (value nil ,post-permalink))
+                 ;;                 (member nil
+				 ;;     (name nil "wp_page_parent_id")
+				 ;;     (value nil ,post-parent))
+				 ;; (member nil
+				 ;;     (name nil "dateCreated")
+				 ;;     (dateTime.iso8601 nil ,post-date))
+				 ;; ,(when post-tags
+				 ;;    `(member nil
+				 ;;         (name nil "mt_keywords")
+				 ;;         (value nil
+				 ;;    	    (array
+				 ;;    	     nil
+				 ;;    	     ,(append
+				 ;;    	       '(data nil)
+				 ;;    	       (mapcar
+				 ;;    		(lambda(f)
+				 ;;    		  `(value nil (string nil ,f)))
+				 ;;    		post-tags))))))
 				 ,(when post-categories
 				    `(member nil
 					     (name nil "categories")
@@ -237,30 +237,30 @@ contents, list of categories, and date respectively."
                                     (member nil
                                             (name nil "description")
                                             (value nil ,post-description))
-                                    (member nil
-                                            (name nil "mt_excerpt")
-                                            (value nil ,post-excerpt))
-                                    (member nil
-					 (name nil "wp_slug")
-					 (value nil ,post-permalink))
-                                    (member nil
-                                            (name nil "wp_page_parent_id")
-                                            (value nil ,post-parent))
-                                    (member nil
-                                            (name nil "dateCreated")
-                                            (dateTime.iso8601 nil ,post-date))
-                                    ,(when post-tags
-                                       `(member nil
-                                                (name nil "mt_keywords")
-                                                (value nil
-                                                       (array
-                                                        nil
-                                                        ,(append
-                                                          '(data nil)
-                                                          (mapcar
-                                                           (lambda(f)
-                                                             `(value nil (string nil ,f)))
-                                                           post-tags))))))
+                     ;;                (member nil
+                     ;;                        (name nil "mt_excerpt")
+                     ;;                        (value nil ,post-excerpt))
+                     ;;                (member nil
+					 ;; (name nil "wp_slug")
+					 ;; (value nil ,post-permalink))
+                     ;;                (member nil
+                     ;;                        (name nil "wp_page_parent_id")
+                     ;;                        (value nil ,post-parent))
+                     ;;                (member nil
+                     ;;                        (name nil "dateCreated")
+                     ;;                        (dateTime.iso8601 nil ,post-date))
+                     ;;                ,(when post-tags
+                     ;;                   `(member nil
+                     ;;                            (name nil "mt_keywords")
+                     ;;                            (value nil
+                     ;;                                   (array
+                     ;;                                    nil
+                     ;;                                    ,(append
+                     ;;                                      '(data nil)
+                     ;;                                      (mapcar
+                     ;;                                       (lambda(f)
+                     ;;                                         `(value nil (string nil ,f)))
+                     ;;                                       post-tags))))))
                                     ,(when post-categories
                                        `(member nil
                                                 (name nil "categories")
@@ -309,27 +309,27 @@ title of the post, post contents, list of categories, and date respectively."
 				 (member nil
 					 (name nil "description")
 					 (value nil ,post-description))
-				 (member nil
-					 (name nil "mt_excerpt")
-					 (value nil ,post-excerpt))
-                                 (member nil
-					 (name nil "wp_slug")
-					 (value nil ,post-permalink))
-				 (member nil
-				 	 (name nil "dateCreated")
-				 	 (dateTime.iso8601 nil ,post-date))
-				 ,(when post-tags
-				    `(member nil
-					     (name nil "mt_keywords")
-					     (value nil
-						    (array
-						     nil
-						     ,(append
-						       '(data nil)
-						       (mapcar
-							(lambda(f)
-							  `(value nil (string nil ,f)))
-							post-tags))))))
+				 ;; (member nil
+				 ;;     (name nil "mt_excerpt")
+				 ;;     (value nil ,post-excerpt))
+                 ;;                 (member nil
+				 ;;     (name nil "wp_slug")
+				 ;;     (value nil ,post-permalink))
+				 ;; (member nil
+				 ;; 	 (name nil "dateCreated")
+				 ;; 	 (dateTime.iso8601 nil ,post-date))
+				 ;; ,(when post-tags
+				 ;;    `(member nil
+				 ;;         (name nil "mt_keywords")
+				 ;;         (value nil
+				 ;;    	    (array
+				 ;;    	     nil
+				 ;;    	     ,(append
+				 ;;    	       '(data nil)
+				 ;;    	       (mapcar
+				 ;;    		(lambda(f)
+				 ;;    		  `(value nil (string nil ,f)))
+				 ;;    		post-tags))))))
 				 ,(when post-categories
 				    `(member nil
 					     (name nil "categories")
