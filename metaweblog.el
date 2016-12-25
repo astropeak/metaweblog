@@ -32,7 +32,8 @@
 		       blog-id
 		       user-name
 		       password
-		       `(("name" . ,category))))
+		       `(("name" . ,category)
+                 ("parent_id" . -1))))
 
 (defun wp-get-tags (blog-xmlrpc user-name password blog-id)
   "Retrieves list of tags from the weblog system. Uses wp.getTags"
@@ -357,7 +358,8 @@ which is to be returned.  Can be used with pages as well."
   "Delete an entry from the weblog system."
   (xml-rpc-method-call blog-xmlrpc
 		       "blogger.deletePost"
-                       nil
+
+               "appkey"
 		       post-id
 		       user-name
 		       password
